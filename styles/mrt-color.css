@@ -1,77 +1,82 @@
-:root{
-    --smrt-nsl-color: #DF2827;
-    --smrt-ewl-color: #009645;
-    --smrt-nel-color: #9900AB;
-    --smrt-ccl-color: #FA9E0D;
-    --smrt-dtl-color: #0055B8;
-    --smrt-tel-color: #9D5918;
-    --smrt-jrl-color: #00ADBB;
-    --smrt-crl-color: #93D500;
-    --smrt-stl-color: #F266B5;
-    --smrt-lrt-color: #708270;
-    --smrt-rts-color: #87CEFA;
-    --smrt-black:     #2E2A25;
-    --smrt-darkgreen: #01474F;
-    --smrt-yellow:    #FFD004;
-    --smrt-lushgreen: #88FF00;
+:root {
+    --lta-nsl-color: #DF2827;
+    --lta-ewl-color: #009645;
+    --lta-nel-color: #9900AB;
+    --lta-ccl-color: #FA9E0D;
+    --lta-dtl-color: #0055B8;
+    --lta-tel-color: #9D5918;
+    --lta-jrl-color: #00ADBB;
+    --lta-crl-color: #93D500;
+    --lta-stl-color: #F266B5;
+    --lta-lrt-color: #708270;
+    --lta-rts-color: #87CEFA;
+    --lta-black:     #2E2A25;
+    --lta-darkgreen: #01474F;
+    --lta-yellow:    #FFD004;
+    --lta-lushgreen: #88FF00;
 }
 
-.smrt-nsl {
-    background-color: #DF2827;
+.lta-nsl {
+    background-color: var(--lta-nsl-color);
     color: white;
 }
 
-.smrt-ewl {
-    background-color: #009645;
+.lta-ewl {
+    background-color: var(--lta-ewl-color);
     color: white;
 }
 
-.smrt-nel {
-    background-color: #9900AB;
+.lta-nel {
+    background-color: var(--lta-nel-color);
     color: white;
 }
 
-.smrt-ccl {
-    background-color: #FA9E0D;
-    color: #2E2A25;
+.lta-ccl {
+    background-color: var(--lta-ccl-color);
+    color: var(--lta-black);
 }
 
-.smrt-dtl {
-    background-color: #0055B8;
+.lta-dtl {
+    background-color: var(--lta-dtl-color);
     color: white;
 }
 
-.smrt-tel {
-    background-color: #9D5918;
+.lta-tel {
+    background-color: var(--lta-tel-color);
     color: white;
 }
 
-.smrt-jrl {
-    background-color: #00ADBB;
+.lta-jrl {
+    background-color: var(--lta-jrl-color);
     color: white;
 }
 
-.smrt-crl {
-    background-color: #93D500;
-    color: #2E2A25;
+.lta-crl {
+    background-color: var(--lta-crl-color);
+    color: var(--lta-black);
 }
 
-.smrt-stl {
-    background-color: #F266B5;
+.lta-stl {
+    background-color: var(--lta-stl-color);
     color: white;
 }
 
-.smrt-lrt {
-    background-color: #708270;
+.lta-lrt {
+    background-color: var(--lta-lrt-color);
     color: white;
 }
 
-.smrt-default {
-    background-color: #01474F;
-    color: #FFD004;
+.lta-rts {
+    background-color: var(--lta-rts-color); /* RTS Link */
+    color: var(--lta-black);
 }
 
-.smrt-rts {
-    background-color: #87CEFA;
-    color: #2E2A25;
+.lta-mrt {
+    background-color: var(--lta-darkgreen);
+    color: var(--lta-yellow);
+}
+
+.lta-bus {
+    background-color: var(--lta-lushgreen);
+    color: var(--lta-black);
 }
