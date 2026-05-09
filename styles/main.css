@@ -11,8 +11,8 @@ body {
 }
 
 .navbar {
-    background-color: var(--smrt-darkgreen);
-    border-bottom: 4px solid var(--smrt-yellow);
+    background-color: var(--lta-darkgreen);
+    border-bottom: 4px solid var(--lta-yellow);
     padding: 10px 0;
     position: sticky;
     top: 0;
