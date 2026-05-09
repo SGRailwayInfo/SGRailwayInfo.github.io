@@ -1,4 +1,4 @@
-.carousel-btn {
+.carousel-button {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
@@ -12,7 +12,7 @@
     z-index: 10;
 }
 
-.carousel-btn:hover {
+.carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
