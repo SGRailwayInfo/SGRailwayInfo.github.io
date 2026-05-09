@@ -1,75 +1,65 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
     background-color: #F4F4F4;
-    color: #333;
-    line-height: 1.6;
+    color: #333333;
+    font-family: sans-serif;
 }
 
 .navbar {
-    background-color: #1A1A1A;
-    color: white;
+    background-color: var(--smrt-darkgreen);
+    border-bottom: 4px solid var(--smrt-yellow);
     padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 4px solid #EF3340; 
 }
 
 .nav-container {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
     margin: 0 auto;
+    max-width: 1200px;
     padding: 0 20px;
 }
 
 .nav-logo img {
-    height: 45px;
     display: block;
+    height: 50px;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    list-style: none;
 }
 
 .nav-links a {
-    color: #FFFFFF;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    transition: color 0.2s ease-in-out;
 }
 
 .nav-links a:hover {
-    color: #00AB4E;
+    color: skyblue;
 }
 
 .content {
-    max-width: 1100px;
     margin: 40px auto;
+    max-width: 1200px;
     padding: 0 20px;
     text-align: center;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .nav-links {
-        gap: 15px;
-        font-size: 0.8rem;
-    }
+.footer {
+    border-top: 1px solid #CCCCCC;
+    font-size: 0.8rem;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
 }
