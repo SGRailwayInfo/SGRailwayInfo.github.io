@@ -60,7 +60,7 @@
     text-decoration: none;
 }
 
-.read-more:hover .read-more:active {
+.read-more:hover, .read-more:active {
     color: white;
     text-decoration: underline;
 }
