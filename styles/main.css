@@ -44,7 +44,7 @@ body {
     text-decoration: none;
 }
 
-.nav-links a:hover {
+.nav-links a:hover a:active {
     color: skyblue;
 }
 
