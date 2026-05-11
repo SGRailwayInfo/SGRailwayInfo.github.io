@@ -63,6 +63,7 @@
 
 .read-more:hover {
     color: white;
+    text-decoration: underline;
 }
 
 .slide-overlay {
