@@ -5,8 +5,7 @@
 }
 
 body {
-    background-color: #F4F4F4;
-    color: #333333;
+    background-color: var(--lta-black);
     font-family: sans-serif;
 }
 
