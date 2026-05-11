@@ -8,7 +8,7 @@ const intervalTime = 5000;
 
 async function initCarousel() {
     try {
-        const response = await fetch('../img-carousel.json'); // Edit path if needed
+        const response = await fetch('../img-carousel.json');
         const data = await response.json();
         renderCarousel(data);
     } catch (error) {
@@ -21,18 +21,25 @@ function renderCarousel(items) {
     const lastClone = items[0];
     const displayList = [firstClone, ...items, lastClone];
 
-    wrapper.innerHTML = displayList.map(item => `
+    wrapper.innerHTML = displayList.map(item => {
+    const buttonColor = item.color && item.color.trim() !== "" ? item.color : "deepskyblue";
+    const hasTitle = item.title && item.title.trim() !== "";
+    const descriptionClass = hasTitle ? "" : "description-bold";
+    const titleHtml = hasTitle ? `<h2>${item.title}</h2>` : "";
+
+    return `
         <div class="carousel-slide">
-            <img src="${item.image}" alt="${item.title}">
+            <img src="${item.image}" alt="${hasTitle ? item.title : "Rail Update"}">
             <div class="slide-overlay">
                 <div class="slide-text">
-                    <h2>${item.title}</h2>
-                    <p>${item.description}</p>
-                    <a href="${item.link}" class="read-more" style="background-color: ${item.color}">Read More</a>
+                    ${titleHtml}
+                    <p class="${descriptionClass}">${item.description}</p>
+                    <a href="${item.link}" class="read-more" style="background-color: ${buttonColor}">Read More</a>
                 </div>
             </div>
         </div>
-    `).join('');
+    `;
+    }).join('');
 
     wrapper.style.transform = `translateX(-${index * 100}%)`;
     startAutoSlide();
