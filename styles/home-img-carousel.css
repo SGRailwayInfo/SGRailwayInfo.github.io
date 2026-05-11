@@ -1,5 +1,5 @@
 .carousel-button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: color-mix(in srgb, black, transparent 50%);
     border: none;
     color: white;
     cursor: pointer;
@@ -13,7 +13,7 @@
 }
 
 .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: color-mix(in srgb, black, transparent 80%);
 }
 
 .carousel-container {
@@ -52,14 +52,17 @@
 }
 
 .read-more {
-    background-color: var(--smrt-tel-color); /* Rail line color: Thomson-East Coast Line */
     border-radius: 4px;
-    color: white;
+    color: royalblue;
     display: inline-block;
     font-weight: bold;
     margin-top: 15px;
     padding: 10px 20px;
     text-decoration: none;
+}
+
+.read-more:hover {
+    color: white;
 }
 
 .slide-overlay {
