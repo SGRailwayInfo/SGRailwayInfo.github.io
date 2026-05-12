@@ -77,6 +77,7 @@
 }
 
 .slide-text {
+    font-family: LTAIdentity;
     color: white;
     max-width: 600px;
     padding: 40px;
@@ -84,6 +85,7 @@
 }
 
 .slide-text h2 {
+    font-family: Stroudley;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
