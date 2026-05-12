@@ -1,3 +1,6 @@
+/* Inter, Montserrat, Ralway, Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: LTAIdentity;
   src: url(../assets/fonts/LTAIdentity.ttf);
@@ -31,6 +34,3 @@
     font-family: NELVPIS;
     src: url(../assets/fonts/NEL-VPIS.ttf);
 }
-
-/* Inter, Montserrat, Ralway, Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
