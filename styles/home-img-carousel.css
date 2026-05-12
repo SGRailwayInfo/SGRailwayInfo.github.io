@@ -77,15 +77,18 @@
 }
 
 .slide-text {
-    font-family: LTAIdentity;
     color: white;
     max-width: 600px;
     padding: 40px;
     text-align: center;
 }
 
-.slide-text h2 {
+.slide-text p {
     font-family: Stroudley;
+}
+
+.slide-text h2 {
+    font-family: LTAIdentity;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
