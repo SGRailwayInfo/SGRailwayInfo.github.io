@@ -24,7 +24,7 @@ function renderCarousel(items) {
     wrapper.innerHTML = displayList.map(item => {
     const buttonColor = item.color && item.color.trim() !== "" ? item.color : "deepskyblue";
     const hasTitle = item.title && item.title.trim() !== "";
-    const descriptionClass = hasTitle ? "" : "description-bold";
+    const descriptionClass = hasTitle ? "" : "slide-text-bold";
     const titleHtml = hasTitle ? `<h2>${item.title}</h2>` : "";
 
     return `
