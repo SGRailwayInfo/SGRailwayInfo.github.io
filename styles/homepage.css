@@ -10,7 +10,7 @@
     flex: 1;
     font-size: 1.5rem;
     font-weight: bold;
-    height: 2rem;
+    height: 160px;
     justify-content: center;
     position: relative;
     text-decoration: none;
@@ -65,6 +65,7 @@
 
     .explore-card {
         flex: 1 1 calc(50% - 15px); /* 2x2 grid */
+        height: 120px;
     }
     
     .explore-card:hover, .explore-card:active {
@@ -75,5 +76,6 @@
 @media (max-width: 480px) {
     .explore-card {
         flex: 1 1 100%; /* 1x4 grid */
+        height: 100px;
     }
 }
