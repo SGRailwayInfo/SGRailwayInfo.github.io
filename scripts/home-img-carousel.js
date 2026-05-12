@@ -34,7 +34,7 @@ function renderCarousel(items) {
                 <div class="slide-text">
                     ${titleHtml}
                     <p class="${descriptionClass}">${item.description}</p>
-                    <a href="${item.link}" class="read-more" style="background-color: ${buttonColor}">Read More</a>
+                    <a href="${item.link}" class="read-more" style="color: ${buttonColor}">Read More</a>
                 </div>
             </div>
         </div>
