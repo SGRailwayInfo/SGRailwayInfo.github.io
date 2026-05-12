@@ -1,4 +1,8 @@
 /* Explore */
+.explore-title {
+    color: white;
+}
+
 .explore-card {
     align-items: center;
     background-position: center;
