@@ -9,6 +9,14 @@ body {
     font-family: Roboto;
 }
 
+.content {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Navbar*/
 .navbar {
     background-color: var(--lta-darkgreen);
     border-bottom: 4px solid var(--lta-yellow);
@@ -46,19 +54,4 @@ body {
 
 .nav-links a:hover, .nav-links a:active {
     color: deepskyblue;
-}
-
-.content {
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.footer {
-    border-top: 1px solid #CCCCCC;
-    font-size: 0.8rem;
-    margin-top: 50px;
-    padding: 20px;
-    text-align: center;
 }
