@@ -93,6 +93,10 @@
     margin-bottom: 10px;
 }
 
+.slide-text-bold {
+    font-weight: bold;
+}
+
 @media (max-width: 800px) {
     .carousel-button {
         font-size: 1.2rem;
