@@ -24,7 +24,7 @@
 }
 
 .explore-card::before {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
     height: 100%;
     left: 0;
@@ -38,6 +38,11 @@
     padding: 0 10px;
     position: relative;
     z-index: 1;
+}
+
+.explore-card:hover::before,
+.explore-card:active::before {
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .explore-card:hover, .explore-card:active {
