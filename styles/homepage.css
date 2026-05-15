@@ -4,6 +4,10 @@
     font-size: 2.2rem;
 }
 
+.explore-subtitle {
+    color: white;
+}
+
 .explore-card {
     align-items: center;
     background-position: center;
