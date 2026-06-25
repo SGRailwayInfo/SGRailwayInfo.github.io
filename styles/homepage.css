@@ -1,9 +1,5 @@
-/* Explore */
 .explore-card {
     align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 8px;
     color: white;
     display: flex;
@@ -15,8 +11,22 @@
     position: relative;
     text-decoration: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    transition: filter 0.3s ease, transform 0.3s ease;
+    transition: transform 0.3s ease;
     white-space: nowrap;
+    overflow: hidden;
+}
+
+.explore-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: var(--bg-img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
 }
 
 .explore-card span {
@@ -29,9 +39,8 @@
     transform: translateY(-10px);
 }
 
-.explore-card:active {
-    filter: brightness(70%);
-    transform: translateY(-10px);
+.explore-card:active::before {
+    filter: brightness(40%); 
 }
 
 .explore-card.compressed {
@@ -64,14 +73,13 @@
     font-weight: 500;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 800px) {
     .explore-container {
         flex-wrap: wrap;
     }
 
     .explore-card {
-        flex: 1 1 calc(50% - 15px); /* 2x2 grid */
+        flex: 1 1 calc(50% - 15px);
         height: 120px;
     }
 
@@ -79,15 +87,14 @@
         transform: translateY(0);
     }
     
-    .explore-card:active {
-        filter: brightness(70%);
-        transform: translateY(0);
+    .explore-card:active::before {
+        filter: brightness(40%);
     }
 }
 
 @media (max-width: 480px) {
     .explore-card {
-        flex: 1 1 100%; /* 1x4 grid */
+        flex: 1 1 100%;
         height: 100px;
     }
 }
